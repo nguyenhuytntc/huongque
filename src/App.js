@@ -7,12 +7,6 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Link to="/">Home</Link>
-                <Link to="/products">Products</Link>
-                <Link to="/sale">Sale</Link>
-                <Link to="/about">About</Link>
-                <Link to="/blog">Blog</Link>
-
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;
