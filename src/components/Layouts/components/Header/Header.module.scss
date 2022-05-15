@@ -1,0 +1,49 @@
+.wrapper {
+}
+
+.announcement {
+    background-color: rgba(136, 83, 5, 0.8);
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 2px;
+}
+
+.top-header {
+    background-color: var(--primary);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+}
+.menu-item {
+    padding: 0 12px;
+}
+
+.menu-item a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.actions {
+}

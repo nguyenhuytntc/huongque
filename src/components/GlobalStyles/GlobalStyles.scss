@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
+    --primary: #885305;
+    --max-width-container: 1100px;
+
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -14,4 +19,12 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+li {
+    list-style-type: none;
+}
+
+a, li {
+    text-decoration: none;
 }
