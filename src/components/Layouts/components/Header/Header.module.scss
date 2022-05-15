@@ -1,7 +1,9 @@
 .wrapper {
+    --top-header-height: 100px;
+    --border-radius-search: 100px;
 }
 
-.announcement {
+.top-sale {
     background-color: rgba(136, 83, 5, 0.8);
     text-align: center;
     color: #fff;
@@ -10,16 +12,16 @@
     padding: 2px;
 }
 
-.top-header {
+.top-site {
     background-color: var(--primary);
-    min-height: 100px;
-    display: flex;
-    align-items: center;
 }
-.container {
+.top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: var(--top-header-height);
+}
+.container {
     max-width: var(--max-width-container);
     margin: 0 auto;
     width: 100%;
@@ -29,11 +31,78 @@
     background-color: #fff;
     border-radius: 50%;
     display: flex;
+}
+.search {
+    flex: 1;
+    display: flex;
+    height: 40px;
+    margin: 70px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 200px;
+
+    input {
+        width: 100%;
+        padding: 0 12px;
+        caret-color: #97c23d;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: #333;
+    }
+}
+
+.search-btn {
+    padding: 0 16px;
+    background-color: #fff;
+    color: #888;
+
+    &:hover {
+        background-color: #ededed;
+    }
+    &:active {
+        background-color: #e3e3e3;
+    }
+}
+.actions {
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+
+    .cart {
+        color: #fff;
+        position: relative;
+        margin-right: 28px;
+        font-size: 2.5rem;
+
+        .count {
+            position: absolute;
+            top: 4px;
+            right: -12px;
+            background-color: red;
+            padding: 0 8px;
+            border-radius: 50%;
+            font-size: 1.4rem;
+        }
+    }
+    .cart-icon {
+    }
+
+    a {
+        margin: 0 8px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .account {
+        margin-right: 28px;
+    }
 }
 
 .main-menu {
     display: flex;
+    background-color: #885305;
 }
 .menu-item {
     padding: 0 12px;
@@ -43,7 +112,4 @@
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-.actions {
 }

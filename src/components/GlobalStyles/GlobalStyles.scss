@@ -25,6 +25,12 @@ li {
     list-style-type: none;
 }
 
-a, li {
+a,
+li {
     text-decoration: none;
+}
+input,
+button {
+    outline: none;
+    border: none;
 }
