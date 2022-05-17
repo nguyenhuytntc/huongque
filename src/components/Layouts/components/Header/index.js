@@ -1,13 +1,22 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.scss';
+import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
-import images from '~/assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
+import styles from './Header.module.scss';
+import images from '~/assets/images';
+
 const cx = classNames.bind(styles);
 function Header() {
-    console.log(cx);
+    const [searchResult, setSearchResult] = useState([]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSearchResult([1, 2, 3]);
+        }, 3000);
+    }, []);
     return (
         <div className={cx('wrapper')}>
             <div className={cx('top-sale')}>
@@ -15,17 +24,30 @@ function Header() {
                     Chào mừng bạn đến với website Thảo Dược Hương Quê. Chúc bạn một ngày vui vẻ!
                 </h2>
             </div>
-            <div className={cx('top-site')}>
+            <div
+                className={cx('top-site')}
+                style={{ background: `url(${images.backgroundHeader}) center / cover no-repeat` }}
+            >
                 <div className={cx('container', 'top-header')}>
                     <div className={cx('logo')}>
                         <img width="90" height="90" src={images.logo} alt="logo" />
                     </div>
-                    <div className={cx('search')}>
-                        <input placeholder="Nhập sản phẩm muốn tìm..." />
-                        <button className={cx('search-btn')}>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
-                        </button>
-                    </div>
+                    <Tippy
+                        interactive
+                        visible={searchResult.length > 0}
+                        render={(attrs) => (
+                            <div className="box" tabIndex="-1" {...attrs}>
+                                My tippy box
+                            </div>
+                        )}
+                    >
+                        <div className={cx('search')}>
+                            <input placeholder="Nhập sản phẩm muốn tìm..." />
+                            <button className={cx('search-btn')}>
+                                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            </button>
+                        </div>
+                    </Tippy>
                     <div className={cx('actions')}>
                         <div className={cx('account')}>
                             <Link to="/login">Login</Link>

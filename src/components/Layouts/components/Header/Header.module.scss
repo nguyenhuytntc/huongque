@@ -1,6 +1,8 @@
 .wrapper {
     --top-header-height: 100px;
     --border-radius-search: 100px;
+    --height-button-search: 40px;
+    --search-top-spacer: 12px;
 }
 
 .top-sale {
@@ -35,7 +37,7 @@
 .search {
     flex: 1;
     display: flex;
-    height: 40px;
+    height: var(--height-button-search);
     margin: 70px;
     border-radius: 100px;
     overflow: hidden;
@@ -54,6 +56,7 @@
 }
 
 .search-btn {
+    position: relative;
     padding: 0 16px;
     background-color: #fff;
     color: #888;
@@ -63,6 +66,17 @@
     }
     &:active {
         background-color: #e3e3e3;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: calc(var(--height-button-search) - var(--search-top-spacer));
+
+        background-color: #ccc;
     }
 }
 .actions {
