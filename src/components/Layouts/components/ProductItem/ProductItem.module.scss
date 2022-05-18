@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    &:hover {
+        background-color: antiquewhite;
+
+    }
+    
+}
+
+.content {
+    padding-left: 8px;
+    width: 100%;
+
+    p {
+        font-size: 1.2rem;
+    }
+}

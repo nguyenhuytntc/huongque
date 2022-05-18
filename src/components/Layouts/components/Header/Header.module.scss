@@ -1,3 +1,4 @@
+
 .wrapper {
     --top-header-height: 100px;
     --border-radius-search: 100px;
@@ -35,10 +36,10 @@
     display: flex;
 }
 .search {
-    flex: 1;
+    width: 300px;
     display: flex;
     height: var(--height-button-search);
-    margin: 70px;
+    margin: 0 70px;
     border-radius: 100px;
     overflow: hidden;
     background-color: #fff;
@@ -79,6 +80,9 @@
         background-color: #ccc;
     }
 }
+.search-results {
+    width: 300px;
+}
 .actions {
     display: flex;
     align-items: center;
@@ -114,9 +118,16 @@
     }
 }
 
+.top-menu {
+    background-color: #885305;
+    
+}
+
 .main-menu {
     display: flex;
-    background-color: #885305;
+    height: 36px;
+    align-items: center;
+    justify-content: space-between;
 }
 .menu-item {
     padding: 0 12px;
