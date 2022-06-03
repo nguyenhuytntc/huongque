@@ -3,6 +3,7 @@
 
 * {
     --primary: #885305;
+    --white: #fff;
     --max-width-container: 1100px;
 
     padding: 0;
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: SVN-Gilroy, Verdana, Roboto, Tahoma, sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -33,4 +34,17 @@ input,
 button {
     outline: none;
     border: none;
+}
+
+//Fonts Emmbeded
+@font-face {
+    font-family: 'SVN-Gilro-medium';
+    src: url('/assets/fonts/svn-gilroy_medium.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'SVN-Gilro-bold';
+    src: url('/assets/fonts/svn-gilroy_semibold.ttf');
+    font-weight: 500;
 }

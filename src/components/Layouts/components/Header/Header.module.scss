@@ -1,4 +1,3 @@
-
 .wrapper {
     --top-header-height: 100px;
     --border-radius-search: 100px;
@@ -10,9 +9,12 @@
     background-color: rgba(136, 83, 5, 0.8);
     text-align: center;
     color: #fff;
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1.2rem;
     padding: 2px;
+
+    &.title {
+        font-weight: 500;
+    }
 }
 
 .top-site {
@@ -35,54 +37,7 @@
     border-radius: 50%;
     display: flex;
 }
-.search {
-    width: 300px;
-    display: flex;
-    height: var(--height-button-search);
-    margin: 0 70px;
-    border-radius: 100px;
-    overflow: hidden;
-    background-color: #fff;
-    min-width: 200px;
 
-    input {
-        width: 100%;
-        padding: 0 12px;
-        caret-color: #97c23d;
-    }
-
-    input:not(:placeholder-shown) ~ .search-btn {
-        color: #333;
-    }
-}
-
-.search-btn {
-    position: relative;
-    padding: 0 16px;
-    background-color: #fff;
-    color: #888;
-
-    &:hover {
-        background-color: #ededed;
-    }
-    &:active {
-        background-color: #e3e3e3;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1px;
-        height: calc(var(--height-button-search) - var(--search-top-spacer));
-
-        background-color: #ccc;
-    }
-}
-.search-results {
-    width: 300px;
-}
 .actions {
     display: flex;
     align-items: center;
@@ -116,25 +71,4 @@
     .account {
         margin-right: 28px;
     }
-}
-
-.top-menu {
-    background-color: #885305;
-    
-}
-
-.main-menu {
-    display: flex;
-    height: 36px;
-    align-items: center;
-    justify-content: space-between;
-}
-.menu-item {
-    padding: 0 12px;
-}
-
-.menu-item a {
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
 }
