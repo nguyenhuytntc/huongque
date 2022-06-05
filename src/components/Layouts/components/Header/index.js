@@ -14,17 +14,25 @@ function Header() {
         <div className={cx('wrapper')}>
             <div className={cx('top-sale')}>
                 <p className={cx('title')}>
-                    Chào mừng bạn đến với website Thảo Dược Hương Quê. Chúc bạn một ngày vui vẻ!
+                    Chào mừng bạn đến với website Thảo Dược Hương Quê. Chúc bạn
+                    một ngày vui vẻ!
                 </p>
             </div>
             <div
                 className={cx('top-site')}
-                style={{ background: `url(${images.backgroundHeader}) center / cover no-repeat` }}
+                style={{
+                    background: `url(${images.backgroundHeader}) center / cover no-repeat`,
+                }}
             >
                 <div className={cx('container', 'top-header')}>
-                    <div className={cx('logo')}>
-                        <img width="90" height="90" src={images.logo} alt="logo" />
-                    </div>
+                    <Link to="/" className={cx('logo')}>
+                        <img
+                            width="90"
+                            height="90"
+                            src={images.logo}
+                            alt="logo"
+                        />
+                    </Link>
                     <Search />
                     <div className={cx('actions')}>
                         <div className={cx('account')}>
@@ -32,7 +40,10 @@ function Header() {
                             <Link to="/register">Register</Link>
                         </div>
                         <div className={cx('cart')}>
-                            <FontAwesomeIcon className={cx('cart-icon')} icon={faBasketShopping} />
+                            <FontAwesomeIcon
+                                className={cx('cart-icon')}
+                                icon={faBasketShopping}
+                            />
                             <span className={cx('count')}>3</span>
                         </div>
                     </div>
