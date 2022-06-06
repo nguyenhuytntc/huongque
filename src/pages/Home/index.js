@@ -4,9 +4,9 @@ import Slide from './Slide';
 
 function Home() {
     return (
-        <Link to="/:productDetail">
+        <div>
             <Slide />
-        </Link>
+        </div>
     );
 }
 

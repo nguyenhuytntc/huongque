@@ -1,11 +1,35 @@
 .wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
     position: relative;
+    overflow-x: hidden;
 }
 .slider {
     background: url('') top center / cover no-repeat;
     padding-top: 40%;
-    width: 100%;
+    width: 100vw;
+    flex-shrink: 0;
+    transition: 750ms all ease-in-out;
+}
+
+.indicator {
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .dot {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+
+    .dot.active {
+        opacity: 1;
+    }
 }
