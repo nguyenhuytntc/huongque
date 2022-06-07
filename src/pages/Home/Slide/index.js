@@ -1,3 +1,8 @@
+import {
+    faCircleArrowLeft,
+    faCircleArrowRight,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -57,6 +62,11 @@ function Slide() {
         setCurrent(newSlideIndex);
     };
 
+    const prevSlide = (slideIndex = current - 1) => {
+        const newSlideIndex = slideIndex <= 0 ? length - 1 : slideIndex;
+        setCurrent(newSlideIndex);
+    };
+
     useEffect(() => {
         const timeId = setTimeout(() => {
             nextSlide();
@@ -78,6 +88,16 @@ function Slide() {
                     }}
                 ></Link>
             ))}
+            <FontAwesomeIcon
+                onClick={() => prevSlide()}
+                className={cx('icon-left')}
+                icon={faCircleArrowLeft}
+            />
+            <FontAwesomeIcon
+                onClick={() => nextSlide()}
+                className={cx('icon-right')}
+                icon={faCircleArrowRight}
+            />
             <Indicators
                 current={current}
                 amountSlides={length}

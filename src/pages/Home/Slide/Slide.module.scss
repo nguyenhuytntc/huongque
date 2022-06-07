@@ -4,11 +4,28 @@
     flex-wrap: nowrap;
     position: relative;
     overflow-x: hidden;
+
+    .icon-left, .icon-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--white);
+        font-size: 40px;
+    }
+    
+    .icon-left {
+        left: 20px;
+
+    }
+
+    .icon-right {
+        right: 20px;
+    }
 }
 .slider {
-    background: url('') top center / cover no-repeat;
+    background: url('') top center / contain no-repeat;
     padding-top: 40%;
-    width: 100vw;
+    width: 100%;
     flex-shrink: 0;
     transition: 750ms all ease-in-out;
 }
