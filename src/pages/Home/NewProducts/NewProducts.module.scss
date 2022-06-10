@@ -1,0 +1,25 @@
+.wrapper {
+    margin-top: 60px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: var(--max-width-container);
+}
+.title {
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.product-list {
+    display: flex;
+    // flex-shrink: 0;
+    overflow: hidden;
+    margin: 0 -8px;
+    
+}
+.product {
+    width: 300px;
+    padding: 0 8px;
+}
