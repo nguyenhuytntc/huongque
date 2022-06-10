@@ -11,21 +11,13 @@
     margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
-}
-.product-list {
-    display: flex;
-    flex-shrink: 0;
-    overflow: hidden;
-    margin: 0 -8px;
-    
-}
-.product {
-    width: 25vw;
-    padding: 0 8px;
 
-    img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+    .icon-new {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        vertical-align: middle;
     }
 }

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import NewProducts from './NewProducts';
 import Policys from './Policys';
 import Slide from './Slide';
+import NewProducts from './NewProducts';
 
 function Home() {
     return (
