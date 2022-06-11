@@ -1,3 +1,4 @@
 export const icons = {
-    start: require('~/assets/icons/start.png'),
+    stars: require('~/assets/icons/stars.png'),
+    gits: require('~/assets/icons/gits.png'),
 };

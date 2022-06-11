@@ -3,11 +3,11 @@ import classNames from 'classnames/bind';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Product from './Product';
+import CardProduct from './CardProduct';
 
 const cx = classNames.bind(style);
 
-function Products() {
+function ProductsSlider() {
     const settings = {
         infinite: true,
         speed: 500,
@@ -42,18 +42,18 @@ function Products() {
 
     return (
         <Slider {...settings}>
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
         </Slider>
     );
 }
 
-export default Products;
+export default ProductsSlider;
