@@ -21,6 +21,11 @@ function Home() {
                 icon={icons.gits}
                 banner={images.banners.bestSeller}
             />
+            <ProductsHome
+                title="Khuyến mãi và Combo"
+                icon={icons.gits}
+                banner={images.banners.bestSeller}
+            />
         </div>
     );
 }
