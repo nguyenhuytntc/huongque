@@ -3,6 +3,12 @@
     padding-top: 50px;
     max-width: var(--max-width-container);
     margin: auto;
+    position: relative;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
 
     .about-home {
         margin-left: 5rem;
@@ -10,28 +16,28 @@
 
         .btn-about {
             background: #de8d1e;
-                border-radius: 1000px;
-                color: #fff;
-                font-weight: 700;
-                letter-spacing: 0;
+            border-radius: 1000px;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0;
 
-                align-items: center;
-                    border: 0;
-                    display: inline-flex;
-                    font-family: SVN-Gilroy Bold, Verdana, Roboto, Tahoma, sans-serif;
-                    font-size: 16px;
-                    height: 45px;
-                    justify-content: center;
-                    line-height: 1.21;
-                    padding: 0 30px;
-                    transition: all .3s;
+            align-items: center;
+            border: 0;
+            display: inline-flex;
+            font-family: SVN-Gilroy Bold, Verdana, Roboto, Tahoma, sans-serif;
+            font-size: 16px;
+            height: 45px;
+            justify-content: center;
+            line-height: 1.21;
+            padding: 0 30px;
+            transition: all 0.3s;
         }
     }
 
     .title {
         color: #4c503d;
-            font-size: 24px;
-            font-weight: 700;
+        font-size: 24px;
+        font-weight: 700;
         text-transform: uppercase;
     }
 
@@ -39,5 +45,4 @@
         text-align: justify;
         margin-bottom: 16px;
     }
-    
 }
