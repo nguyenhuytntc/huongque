@@ -4,6 +4,7 @@ import Slide from './Slide';
 import ProductsHome from './ProductsHome';
 import { icons } from '~/assets/icons';
 import images from '~/assets/images';
+import AboutHome from './AboutHome';
 
 function Home() {
     return (
@@ -26,6 +27,7 @@ function Home() {
                 icon={icons.gits}
                 banner={images.banners.bestSeller}
             />
+            <AboutHome />
         </div>
     );
 }

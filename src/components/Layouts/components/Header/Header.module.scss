@@ -3,6 +3,10 @@
     --border-radius-search: 100px;
     --height-button-search: 40px;
     --search-top-spacer: 12px;
+
+    position: fixed;
+    z-index: 11;
+    width: 100%;
 }
 
 .top-sale {

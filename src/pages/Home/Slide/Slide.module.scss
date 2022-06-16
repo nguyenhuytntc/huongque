@@ -5,6 +5,8 @@
     position: relative;
     overflow-x: hidden;
 
+    margin-top: var(--top-header-height);
+
     .icon-left, .icon-right {
         position: absolute;
         top: 50%;
