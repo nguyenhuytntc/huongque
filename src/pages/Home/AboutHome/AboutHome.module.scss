@@ -6,7 +6,7 @@
     position: relative;
 
     img {
-        width: 100%;
+        width: 40%;
         object-fit: contain;
     }
 
@@ -44,5 +44,28 @@
     .description {
         text-align: justify;
         margin-bottom: 16px;
+    }
+}
+.card-about {
+    padding-top: 40px;
+    position: absolute;
+    top: 325px;
+    right: 106px;
+    width: 60%;
+}
+.card-about-item {
+    display: flex !important;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 15px 0 rgb(76 80 61 / 8%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0 10px 15px 0 rgb(76 80 61 / 15%);
     }
 }
