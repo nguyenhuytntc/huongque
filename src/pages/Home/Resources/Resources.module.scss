@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+}
+.header {
+    flex: 0 0 310px;
+    margin-right: 20px;
+    max-width: 310px;
+}
+.resources-slider {
+    width: 100%;
+}
+
+.card-resources {
+    margin: 0 10px;
+    width: 300px;
+}

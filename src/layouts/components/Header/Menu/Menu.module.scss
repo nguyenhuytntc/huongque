@@ -1,0 +1,30 @@
+.top-menu {
+    background-color: #885305;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+
+    height: 36px;
+}
+.menu-item {
+    padding: 0 18px;
+
+    a:hover {
+        color: yellow;
+    }
+}
+
+.menu-item a {
+    font-family: 'SVN-Gilro-bold', Verdana, Roboto, Tahoma, sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
